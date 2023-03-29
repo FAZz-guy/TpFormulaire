@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <p>Nous soumettre votre projet</p>
+    <div class="container">
+
+        <div class="identite"> 
+
+
+            <div class="boxN">
+                <h1>Nom</h1>
+                <form>
+                    <input type="text" id="nom">
+               </form>
+            </div>
+
+            <div class="boxP">
+                <h1>Prénom</h1>
+                <form>
+                    <input type="text" id="prenom">
+                </form>
+            </div>
+
+            <div class="boxE">
+                <h1>Emai</h1>
+                <form>
+                    <input type="text" id="email">
+                </form>
+            </div>
+        
+
+        </div>
+<!-- -------------------------------------------------------------------------- -->
+        <div class="option">
+            <div class="boxech">
+                <h1>Echéance</h1>
+                <form>
+                    <input type="radio" name="choix1" id="ch1">
+                    Sous 3 mois
+                    <br>
+                    <input type="radio" name="choix2" id="ch2">
+                    Sous 3 à 6 mois
+                    <br>
+                    <input type="radio" name="choix3" id="choix3">
+                    plus de 6 mois
+                </form>
+            </div>
+            <div class="boxnature">
+                <h1>Nature de la demande</h1>
+                <div class="inv">
+                    <form>
+                        <input type="checkbox" name="choixb1" id="chb1">
+                        Investissement
+                    </form>
+                </div>
+                <div class="pres">
+                    <form>
+                        <input type="checkbox" name="choixb2" id="chb1">
+                        Prestation conseil
+                    </form>
+                </div>
+
+                <div class="rep">
+                    <form>
+                        <label for="nbrjours">Réponse souhaitée s</label>
+                        <input type="text" id="nbrjours">
+                        <input type="checkbox">
+                    </form>
+                </div>
+            </div>
+        </div>
+<!-- -------------------------------------------------------------------------- -->
+        
+<div class="projet"> 
+
+
+    <div class="entete">
+        <h1>Intitulé du projet</h1>
+        <form>
+            <input type="text" id="intP">
+       </form>
+    </div>
+
+    <div class="des">
+        <h1>Description du projet</h1>
+        <form>
+            <textarea name="descriptio" id="DesP" style="width: 100%; height: 100%;">
+            </textarea>
+        </form>
+    </div>
+
+</div>
+<!-- -------------------------------------------------------------------------------- -->
+        <div class="valide">
+
+            <div class="envoyer">
+                <input type="submit" value="Envoyer">
+            </div>
+
+            <div class="reinit">
+                <input type="reset" value="Rénitialiser">
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

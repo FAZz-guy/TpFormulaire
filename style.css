@@ -1,0 +1,332 @@
+/* cette partie sert a initiliser tout les margin et padding du site a 0 */
+*{
+    padding: 0;
+    margin: 0;
+}
+/* les parametre du body ci dessous sert a centrer l'image de fond 
+et faire un sorte de la repartie sur toute la page */
+body
+{
+    background: url(./image/café.png),center/cover;
+  
+}
+body p{
+    height: 25px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 40%;
+    background: gray;
+    border-radius: 20px;
+   
+}
+
+/* les unités "vh" "vw" sont attribué au mésur visible sur la feêtre
+le "%" quand lui definit le pourcentage de son élément parent */
+/* 
+le display grid permet de créé des grille, il est souvent accompagné
+de ses paramètre  "grid-template-columns" pour les separtion en colonne 
+"grid-template-rows" pour les separation en ligne 
+et le " gride area pour definir les emplacerment qu'on souhaite 
+faire prendre a nos différent élément " */
+.container
+{
+    margin: 0 100px 100px 100px ;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 30% 60% 10%;
+    background: rgba(0, 0, 0, 0.668);
+    grid-template-areas: 
+    "ide pro"
+    "opt pro"
+    "opt val"
+
+}
+
+/* quand on met plusieur classe séparé d'un virgule permet d'attribuer 
+à toutes ces classe les même paramètres
+tandis que séparé par des espace consisteras a pointer sur un élément dans un autre dite son parent */
+.identite, .projet, .option
+{
+    
+    margin: 5px;
+    border-radius: 5px 20px ;
+    box-shadow: 0 0 5px 02px rgba(0, 0, 0, 0.378) ;
+    background-color: rgba(255, 255, 255, 0.721);
+    
+}
+
+.identite
+{
+    grid-area: ide;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.projet
+{
+    grid-area: pro;
+    
+}
+
+.option
+{
+    grid-area: opt;
+}
+
+.valide
+{
+    grid-area: val;
+}
+
+.boxN, .boxP,.boxE
+{
+    display: grid;
+    margin: 5px;
+    grid-template-columns: 30% 70%;
+    background: rgb(151, 151, 151);
+    border-radius: 30px;
+  
+} 
+
+.identite h1
+{
+    font-size: 1rem;
+    margin: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(222, 222, 222);
+    border-radius: 50px;
+}
+.identite form
+{
+    margin: 5px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(225, 222, 222);
+    border-radius: 50px;
+}
+
+ .identite input
+{
+width: 90%;
+} 
+
+.option
+{
+    display: grid;
+    grid-template-rows: 30% 70%;
+  
+    
+}
+.boxech, .boxnature
+{
+    margin: 10px;
+    padding: 10px;
+    background: rgb(161, 160, 160);
+    border-radius:5px 20px;
+}
+
+.boxech
+{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.boxech h1
+{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+.boxech form
+{
+    padding: 10px;
+}
+
+.boxech form ,.boxech h1
+{
+    margin:5px ;
+    background: rgb(214, 214, 214);
+    border-radius: 20px;
+}
+
+/* --------------------------------------------------------------------- */
+
+/* Partie de l'option avec la class box nature  */
+
+.boxnature
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.boxnature .inv, .pres, .rep form
+{
+  
+    margin: 10px;
+    padding: 20x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: rgb(225, 222, 222);
+
+}
+.boxnature h1
+{
+    font-size: 1rem;
+    margin: 10px 30px 10px 30px;
+    padding: 20x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: rgb(225, 222, 222);
+
+}
+
+.rep
+{
+
+    margin: 10px;
+    padding: 20x;
+    display: flex;
+    justify-content: start;
+    border-radius: 20px;
+    background: rgb(225, 222, 222);   
+}
+.rep form
+{
+    display: grid;
+    grid-template-columns: 70% 20% 10%;
+}
+.rep form label
+{
+display: flex;
+justify-content: center;
+font-size: larger;
+
+}
+/* --------------------------------------------------------------------------------- */
+
+/* Partie pour les paramètre du projet */
+
+.projet
+{
+    display: grid;
+    grid-template-rows: 10% 90%;
+    margin: 10px;
+    padding: 10px;
+}
+.entete
+{
+    display: grid;
+    margin: 5px;
+    grid-template-columns: 40% 60%;
+    background: rgb(151, 151, 151);
+    border-radius: 30px;
+}
+
+.projet .entete h1
+{
+ 
+    margin: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(222, 222, 222);
+    border-radius: 50px;
+}
+
+.projet .entete  form
+{
+    margin: 5px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(225, 222, 222);
+    border-radius: 50px;
+}
+
+.projet .entete input
+{
+    width: 90%;
+}
+/* ----------------------------------------------------------------------- */
+
+/* partie projet description */
+
+.des
+{
+    display: grid;
+    grid-template-rows: 10% 90%;
+    background: rgb(151, 151, 151);
+    border-radius: 20px;
+    
+}
+
+.des form
+{
+
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.projet .des h1
+{
+    font-size: 20px;
+    width: 40%;
+    margin: 10px;    
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background: rgb(225, 222, 222);
+    border-radius: 20px;
+}
+/* ------------------------------------------------------------------------------ */
+
+.valide
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+ 
+}
+
+.envoyer
+{
+    
+padding: 20px 0 50px 190px ;
+    
+}
+
+.reinit
+{
+    
+padding: 20px  190px 20px 0px ;
+    
+}
+
+.valide .envoyer input
+{
+    cursor: pointer;
+    background: rgb(82, 255, 191);
+}
+
+.valide .reinit input
+{
+    cursor: pointer;
+    background: rgb(255, 97, 97);
+}
+
+/* note  */
